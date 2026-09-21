@@ -22,19 +22,22 @@ export default function App() {
     const path = window.location.pathname.toLowerCase();
     const hash = window.location.hash.toLowerCase();
 
-    if (path.includes('/pt-pt') || hash.includes('pt-pt') || path.includes('/pt') || hash.includes('pt')) return 'pt-pt';
+    if (path.includes('/pt-br') || hash.includes('pt-br')) return 'pt-br';
+    if (path.includes('/pt-pt') || hash.includes('pt-pt')) return 'pt-pt';
     if (path.includes('/en') || hash.includes('en')) return 'en';
     if (path.includes('/es') || hash.includes('es')) return 'es';
     if (path.includes('/fr') || hash.includes('fr')) return 'fr';
+    if (path.includes('/pt') || hash.includes('pt')) return 'pt-br';
 
     // Check navigator language
     const browserLang = navigator.language.toLowerCase();
-    if (browserLang.startsWith('pt')) return 'pt-pt';
+    if (browserLang.startsWith('pt-pt')) return 'pt-pt';
+    if (browserLang.startsWith('pt')) return 'pt-br';
     if (browserLang.startsWith('en')) return 'en';
     if (browserLang.startsWith('es')) return 'es';
     if (browserLang.startsWith('fr')) return 'fr';
 
-    return 'pt-pt';
+    return 'pt-br';
   };
 
   const [currentLang, setCurrentLang] = useState<LanguageCode>(getInitialLanguage());

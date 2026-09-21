@@ -27,6 +27,91 @@ export interface TestimonialsData {
 }
 
 export const testimonialsByLanguage: Record<LanguageCode, TestimonialsData> = {
+  'pt-br': {
+    sectionTag: 'DEPOIMENTOS & REPUTAÇÃO',
+    title: 'A confiança de marcas e líderes que exigem distinção.',
+    subtitle: 'Veja o que fundadores, diretores executivos e investidores relatam após transformarem a sua presença digital com a AXÉ IA.',
+    ratingScore: '5.0 / 5.0',
+    ratingCount: 'Mais de 40+ projetos de luxo entregues internacionalmente',
+    verifiedLabel: 'Depoimento Verificado',
+    items: [
+      {
+        id: '1',
+        name: 'Henrique Vasconcellos',
+        role: 'Fundador & CEO',
+        company: 'Vanguard Luxury Capital',
+        location: 'São Paulo, Brasil',
+        flag: '🇧🇷',
+        avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=260&q=80',
+        projectType: 'Plataforma Institucional & Private Hub',
+        rating: 5,
+        highlight: 'Superou qualquer expectativa de sofisticação e velocidade.',
+        quote: 'A AXÉ IA redefiniu totalmente como os investidores internacionais percebem a nossa gestora. O nível de acabamento, a velocidade instantânea em qualquer país e o cuidado com cada detalhe tipográfico nos colocaram em um novo patamar competitivo.',
+        metric: '+140%',
+        metricLabel: 'Leads qualificados internacionais'
+      },
+      {
+        id: '2',
+        name: 'Camila Drummond',
+        role: 'Chief Brand Officer',
+        company: 'Maison Éthérée Jewelry',
+        location: 'Lisboa, Portugal',
+        flag: '🇵🇹',
+        avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=260&q=80',
+        projectType: 'E-commerce Internacional de Joias',
+        rating: 5,
+        highlight: 'Vendas no Brasil e na Europa sem qualquer atrito.',
+        quote: 'As nossas joias exigiam um design digital que fizesse jus ao artesanato e ao luxo tangível. A loja criada pela AXÉ IA aumentou o nosso ticket médio imediatamente e facilitou o checkout multi-moeda em real e euro.',
+        metric: '3.8x',
+        metricLabel: 'Aumento na taxa de conversão'
+      },
+      {
+        id: '3',
+        name: 'Marcus Sterling',
+        role: 'Managing Partner',
+        company: 'Aetherion Cloud Systems',
+        location: 'Miami, Estados Unidos',
+        flag: '🇺🇸',
+        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=260&q=80',
+        projectType: 'Landing Page de Alta Conversão B2B',
+        rating: 5,
+        highlight: 'Precisão estética impecável e latência ultrabaixa.',
+        quote: 'Precisávamos fechar contratos enterprise nos EUA e na Europa. A equipe da AXÉ IA entregou uma interface cinematográfica que conquistou clientes antes mesmo da primeira reunião com os nossos executivos.',
+        metric: '< 0.3s',
+        metricLabel: 'Tempo de abertura nos EUA e América Latina'
+      },
+      {
+        id: '4',
+        name: 'Drª. Sofia Alencastro',
+        role: 'Diretora Clínica',
+        company: 'Instituto Alencastro de Longevidade',
+        location: 'São Paulo & Lisboa',
+        flag: '🇧🇷',
+        avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=260&q=80',
+        projectType: 'Website Institucional & Concierge VIP',
+        rating: 5,
+        highlight: 'Elegância que transmite autoridade imediata.',
+        quote: 'Os nossos pacientes de alto patrimônio procuram exclusividade e privacidade. A integração do concierge inteligente com agendamento direto pelo site gerou uma experiência acolhedora, moderna e extremamente requintada.',
+        metric: '98%',
+        metricLabel: 'Aprovação dos pacientes VIP'
+      },
+      {
+        id: '5',
+        name: 'Eduardo Morales',
+        role: 'Head of Growth',
+        company: 'Solaria Solar Solutions',
+        location: 'Madrid, Espanha',
+        flag: '🇪🇸',
+        avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=260&q=80',
+        projectType: 'Infraestrutura Multi-idiomas & Captação',
+        rating: 5,
+        highlight: 'O sistema multilíngue gerou novos mercados em semanas.',
+        quote: 'A capacidade da AXÉ IA em conceber arquiteturas multilíngues com SEO internacional impecável nos permitiu captar projetos industriais em 4 países simultaneamente.',
+        metric: '€2.4M',
+        metricLabel: 'Pipeline gerado em 6 meses'
+      }
+    ]
+  },
   'pt-pt': {
     sectionTag: 'TESTEMUNHOS & REPUTAÇÃO',
     title: 'A confiança de marcas e líderes que exigem distinção.',

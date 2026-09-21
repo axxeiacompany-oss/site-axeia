@@ -2,13 +2,410 @@ import { LanguageCode, LanguageOption, Translations } from '../types';
 import { portfolioItems } from './portfolioData';
 
 export const languageOptions: LanguageOption[] = [
-  { code: 'pt-pt', label: 'Português', flag: '🇵🇹', shortLabel: 'PT' },
+  { code: 'pt-br', label: 'Português (Brasil)', flag: '🇧🇷', shortLabel: 'BR' },
+  { code: 'pt-pt', label: 'Português (Portugal)', flag: '🇵🇹', shortLabel: 'PT' },
   { code: 'en', label: 'English', flag: '🇺🇸', shortLabel: 'EN' },
   { code: 'es', label: 'Español', flag: '🇪🇸', shortLabel: 'ES' },
   { code: 'fr', label: 'Français', flag: '🇫🇷', shortLabel: 'FR' },
 ];
 
 export const translations: Record<LanguageCode, Translations> = {
+  'pt-br': {
+    nav: {
+      services: 'O Que Fazemos',
+      difference: 'Diferenciais',
+      portfolio: 'Portfólio',
+      process: 'Processo',
+      international: 'Internacional',
+      technology: 'Tecnologia',
+      ctaButton: 'Criar meu projeto',
+      availableBadge: 'Disponível para projetos selecionados',
+    },
+    hero: {
+      badge: 'Brasil • Europa • América Latina • Worldwide',
+      headline: 'O SEU NEGÓCIO MERECE UMA PRESENÇA DIGITAL À ALTURA.',
+      subheadline: 'Criamos experiências digitais premium que transformam ideias, empresas e marcas em presenças memoráveis na internet.',
+      primaryCta: 'Criar meu projeto',
+      secondaryCta: 'Explorar nossos projetos',
+      presenceTag: 'Digital experiences engineered for the world.',
+      metrics: {
+        satisfaction: '100% Satisfação de Clientes',
+        speed: '< 0.4s Tempo de Carregamento',
+        global: '28+ Países Atendidos',
+      },
+    },
+    whatWeDo: {
+      sectionTag: 'SERVIÇOS DE ALTO VALOR',
+      title: 'Não criamos apenas websites. Criamos presença.',
+      subtitle: 'A Axé IA transforma negócios em experiências digitais sofisticadas, rápidas e preparadas para conquistar clientes em qualquer lugar do mundo.',
+      cards: [
+        {
+          id: 'websites-premium',
+          title: 'Websites Premium',
+          tagline: 'Websites institucionais modernos, rápidos e estratégicos.',
+          description: 'Arquitetura refinada, tipografia cinematográfica e engenharia de alta fidelidade para empresas e líderes que exigem distinção absoluta.',
+          features: ['Design exclusivo sob medida', 'Velocidade ultrarrápida (Edge)', 'SEO técnico internacional', 'Experiência imersiva em qualquer tela'],
+          icon: 'Globe',
+          badge: 'Institucional de Luxo'
+        },
+        {
+          id: 'landing-pages',
+          title: 'Landing Pages',
+          tagline: 'Páginas desenvolvidas para transformar tráfego em oportunidades e vendas.',
+          description: 'Estruturas de altíssima conversão que unem copywriting persuasivo de luxo, estética impecável e resposta imediata do usuário.',
+          features: ['Copywriting estratégico', 'Microinterações que guiam a decisão', 'Testes A/B nativos', 'Integração direta com CRMs'],
+          icon: 'Sparkles',
+          badge: 'Alta Conversão'
+        },
+        {
+          id: 'ecommerce',
+          title: 'E-commerce',
+          tagline: 'Lojas virtuais preparadas para vender produtos e serviços.',
+          description: 'Plataformas de comércio digital pensadas para marcas de prestígio, com navegação fluida, checkout instantâneo e suporte multi-moeda.',
+          features: ['Checkout em 1 clique', 'Multi-moeda (BRL, USD, EUR)', 'Integração de pagamentos nacionais e globais', 'Performance ultra-otimizada'],
+          icon: 'ShoppingBag',
+          badge: 'Digital Commerce'
+        },
+        {
+          id: 'ia-experiences',
+          title: 'Experiências com IA',
+          tagline: 'Integração de inteligência artificial para criar experiências digitais mais inteligentes.',
+          description: 'Agentes conversacionais inteligentes, personalização dinâmica de conteúdo e automações em tempo real que encantam os seus clientes.',
+          features: ['Agentes de qualificação 24/7', 'Personalização preditiva', 'Automação inteligente de processos', 'Modelos avançados de linguagem'],
+          icon: 'Cpu',
+          badge: 'Inteligência Artificial'
+        },
+        {
+          id: 'international-presence',
+          title: 'Presença Internacional',
+          tagline: 'Estruturas digitais preparadas para diferentes idiomas, mercados e públicos.',
+          description: 'Infraestrutura global distribuída em CDN de baixa latência, conformidade integral com LGPD/GDPR e adaptação cultural para múltiplos mercados.',
+          features: ['Sistemas multi-idiomas nativos', 'Roteamento geográfico inteligente', 'Conformidade legal global', 'Latência inferior a 25ms'],
+          icon: 'Navigation',
+          badge: 'Escala Global'
+        },
+        {
+          id: 'bespoke-solutions',
+          title: 'Soluções Sob Medida',
+          tagline: 'Projetos personalizados de acordo com o objetivo de cada negócio.',
+          description: 'Desenvolvimento técnico de alta complexidade para marcas, ecossistemas digitais, portais exclusivos e ferramentas proprietárias.',
+          features: ['Arquitetura escalável', 'APIs e integrações complexas', 'Design System proprietário', 'Suporte e governança contínua'],
+          icon: 'Layers',
+          badge: 'Tailor-Made'
+        }
+      ]
+    },
+    difference: {
+      sectionTag: 'FILOSOFIA EXCLUSIVA',
+      title: 'Tecnologia. Estratégia. Estética.',
+      subtitle: 'Combinamos o rigor da engenharia de ponta com a sofisticação do design internacional para entregar ativos digitais inestimáveis.',
+      pillars: [
+        {
+          number: '01',
+          title: 'DESIGN',
+          headline: 'Interfaces sofisticadas que valorizam a sua marca.',
+          description: 'Design digital com padrão de galeria internacional. Cada proporção, microinteração e contraste visual é desenhado para elevar o valor percebido do seu negócio.',
+          metric: '100%',
+          metricLabel: 'Identidade Única',
+          highlight: 'Sem templates genéricos. Apenas distinção.'
+        },
+        {
+          number: '02',
+          title: 'PERFORMANCE',
+          headline: 'Websites rápidos, responsivos e preparados para conversão.',
+          description: 'Arquitetura de ponta com carregamento instantâneo em qualquer lugar do mundo. Código limpo que garante índices máximos de conversão e aprovação no Google.',
+          metric: '99+',
+          metricLabel: 'Lighthouse Score',
+          highlight: 'Carregamento abaixo de 400ms em redes globais.'
+        },
+        {
+          number: '03',
+          title: 'INTELIGÊNCIA',
+          headline: 'Tecnologia e IA aplicadas para criar experiências digitais mais eficientes.',
+          description: 'Integramos modelos de IA e automações inteligentes que transformam o seu website em um canal ativo de geração de negócios e atendimento refinado.',
+          metric: '24/7',
+          metricLabel: 'Automação Ativa',
+          highlight: 'Inteligência invisível que maximiza resultados.'
+        }
+      ]
+    },
+    portfolio: {
+      sectionTag: 'TRABALHOS SELECIONADOS',
+      title: 'Projetos que falam antes da primeira palavra.',
+      subtitle: 'Uma seleção de experiências criadas para líderes, marcas inovadoras e empresas com ambição internacional.',
+      allCategories: 'Todos os Projetos',
+      categories: [
+        { id: 'all', name: 'Todos' },
+        { id: 'websites', name: 'Websites' },
+        { id: 'landing-pages', name: 'Landing Pages' },
+        { id: 'ecommerce', name: 'E-commerce' },
+        { id: 'ia', name: 'IA' },
+        { id: 'internacional', name: 'Internacional' }
+      ],
+      viewProject: 'Ver Apresentação do Projeto',
+      items: portfolioItems
+    },
+    process: {
+      sectionTag: 'METODOLOGIA DE ALTO NÍVEL',
+      title: 'Do conceito à experiência.',
+      subtitle: 'Um fluxo de trabalho transparente, cirúrgico e pontual para materializar a sua visão com perfeição técnica.',
+      steps: [
+        {
+          step: '01',
+          title: 'Discovery',
+          description: 'Entendemos o seu negócio, público e objetivos.',
+          details: 'Imersão detalhada no posicionamento da marca, análise competitiva internacional e definição clara das métricas de sucesso.',
+          duration: 'Semana 1'
+        },
+        {
+          step: '02',
+          title: 'Estratégia',
+          description: 'Definimos estrutura, posicionamento e experiência.',
+          details: 'Arquitetura de informação, mapa da jornada do cliente de alto valor e roteiro de conversão para cada seção da interface.',
+          duration: 'Semana 1–2'
+        },
+        {
+          step: '03',
+          title: 'Design',
+          description: 'Criamos uma identidade visual digital exclusiva.',
+          details: 'Direção de arte de prestígio, tipografia cinematográfica, microinterações e protótipos de alta fidelidade para validação visual.',
+          duration: 'Semana 2–3'
+        },
+        {
+          step: '04',
+          title: 'Desenvolvimento',
+          description: 'Transformamos o conceito em uma experiência funcional e responsiva.',
+          details: 'Codificação limpa em React/Next.js e Tailwind, otimização de performance extrema e integração com IA e APIs.',
+          duration: 'Semana 3–4'
+        },
+        {
+          step: '05',
+          title: 'Lançamento',
+          description: 'Publicamos, testamos e entregamos o seu projeto pronto para o mundo.',
+          details: 'Deploy em rede CDN global, testes exaustivos de segurança e velocidade, configuração de SEO técnico e entrega final impecável.',
+          duration: 'Semana 5'
+        }
+      ]
+    },
+    international: {
+      sectionTag: 'ALCANCE GLOBAL',
+      title: 'Uma marca. Um mundo inteiro.',
+      description: 'A Axé IA desenvolve experiências digitais preparadas para empresas que desejam atuar além das fronteiras.',
+      quote: 'Designed locally. Built globally.',
+      badge: 'Hubs Globais Ativos',
+      activeNodesLabel: 'Nós de Infraestrutura Edge',
+      latencyLabel: 'Latência média global',
+      complianceLabel: 'Conformidade Regulatória',
+      complianceDesc: 'LGPD (Brasil) • GDPR (Europa) • CCPA (EUA)'
+    },
+    audience: {
+      sectionTag: 'SEGMENTOS DE EXCELÊNCIA',
+      title: 'Construído para quem pensa grande.',
+      subtitle: 'Atendemos clientes com visão que entendem que o design e a tecnologia são os maiores alavancadores de valor de uma marca.',
+      cards: [
+        {
+          id: 'empresas',
+          title: 'Empresas',
+          tag: 'Corporativo & B2B',
+          description: 'Companhias consolidadas que procuram modernizar o seu posicionamento e transmitir solidez e liderança inquestionáveis.',
+          benefit: 'Autoridade imediata e credibilidade institucional.',
+          icon: 'Building2'
+        },
+        {
+          id: 'startups',
+          title: 'Startups',
+          tag: 'Scale-ups & Tech',
+          description: 'Startups inovadoras que precisam de interfaces de nível internacional para atrair investidores, clientes e talentos de ponta.',
+          benefit: 'Velocidade de go-to-market com apelo internacional.',
+          icon: 'Rocket'
+        },
+        {
+          id: 'profissionais',
+          title: 'Profissionais',
+          tag: 'Líderes & Consultores',
+          description: 'Médicos, advogados, consultores e executivos que exigem uma presença digital tão elegante quanto a sua reputação.',
+          benefit: 'Valorização de honorários e diferenciação de topo.',
+          icon: 'UserCheck'
+        },
+        {
+          id: 'infoprodutores',
+          title: 'Infoprodutores',
+          tag: 'High-Ticket & Mentores',
+          description: 'Criadores de produtos de alto valor que buscam páginas de lançamento cinematográficas com elevadíssima taxa de conversão.',
+          benefit: 'Aumento expressivo na conversão de produtos premium.',
+          icon: 'TrendingUp'
+        },
+        {
+          id: 'criadores',
+          title: 'Criadores',
+          tag: 'Mídia & Influência',
+          description: 'Figuras públicas e criadores de conteúdo que buscam um ecossistema digital próprio, independente das redes sociais.',
+          benefit: 'Controle total da própria audiência e monetização.',
+          icon: 'Camera'
+        },
+        {
+          id: 'marcas',
+          title: 'Marcas',
+          tag: 'Luxo & Lifestyle',
+          description: 'Marcas de moda, design, hotelaria e estética que exigem uma narrativa visual memorável e requintada.',
+          benefit: 'Fidelização sensorial e valor de marca elevado.',
+          icon: 'Crown'
+        },
+        {
+          id: 'e-commerces',
+          title: 'E-commerces',
+          tag: 'Varejo de Prestígio',
+          description: 'Operações de e-commerce que querem se distanciar dos modelos genéricos e oferecer uma experiência de compra sofisticada.',
+          benefit: 'Ticket médio superior e retenção de clientes.',
+          icon: 'ShoppingBag'
+        },
+        {
+          id: 'empresas-internacionais',
+          title: 'Empresas Internacionais',
+          tag: 'Cross-Border',
+          description: 'Organizações com operações no Brasil, Europa e América Latina que requerem websites multi-idiomas perfeitamente arquitetados.',
+          benefit: 'Consistência global e presença sem barreiras locais.',
+          icon: 'Globe2'
+        }
+      ]
+    },
+    technology: {
+      sectionTag: 'ENGENHARIA AVANÇADA',
+      title: 'Tecnologia invisível. Experiência inesquecível.',
+      subtitle: 'Eliminamos a complexidade técnica para entregar websites que operam à velocidade do pensamento com segurança de classe mundial.',
+      modules: [
+        {
+          id: 'ia',
+          title: 'IA & Agentes',
+          benefit: 'Atendimento e inteligência 24/7',
+          description: 'Integração de inteligência artificial generativa para qualificação automática e personalização dinâmica.',
+          badge: 'Next-Gen',
+          icon: 'Cpu'
+        },
+        {
+          id: 'automacao',
+          title: 'Automação',
+          benefit: 'Processos comerciais fluidos',
+          description: 'Conexão nativa com fluxos de CRM, notificações em tempo real e automação de agendamentos.',
+          badge: 'Fluxos Inteligentes',
+          icon: 'Zap'
+        },
+        {
+          id: 'integracoes',
+          title: 'Integrações',
+          benefit: 'Ecossistema unificado',
+          description: 'Conexão fluida com sistemas legados, gateways de pagamento e plataformas corporativas.',
+          badge: 'Sem Atrito',
+          icon: 'Workflow'
+        },
+        {
+          id: 'apis',
+          title: 'APIs Modernas',
+          benefit: 'Dados em tempo real',
+          description: 'Arquiteturas headless modernas que consomem e distribuem dados com latência ultra-baixa.',
+          badge: 'Headless',
+          icon: 'Code2'
+        },
+        {
+          id: 'analytics',
+          title: 'Analytics Avançado',
+          benefit: 'Decisões guiadas por dados',
+          description: 'Telemetria e mapas de calor sem comprometer a privacidade do usuário ou a velocidade do website.',
+          badge: 'Insights',
+          icon: 'BarChart3'
+        },
+        {
+          id: 'seo',
+          title: 'SEO Técnico',
+          benefit: 'Primeiras posições no Google',
+          description: 'Indexação estruturada JSON-LD, tags OpenGraph e pontuação máxima nos Core Web Vitals.',
+          badge: 'Visibilidade',
+          icon: 'Search'
+        },
+        {
+          id: 'performance',
+          title: 'Performance Extrema',
+          benefit: 'Carregamento em milissegundos',
+          description: 'Otimização de pacotes, compressão de mídia de última geração e execução assíncrona.',
+          badge: '< 0.4s',
+          icon: 'Gauge'
+        },
+        {
+          id: 'responsividade',
+          title: 'Responsividade Total',
+          benefit: 'Impecável em qualquer tela',
+          description: 'Adaptação geométrica fluida de smartphones a monitores ultra-wide 8K.',
+          badge: 'Mobile-First',
+          icon: 'Smartphone'
+        },
+        {
+          id: 'seguranca',
+          title: 'Segurança & Criptografia',
+          benefit: 'Proteção institucional',
+          description: 'Certificados SSL enterprise, mitigação de DDoS, headers de segurança e conformidade LGPD.',
+          badge: 'Blindado',
+          icon: 'ShieldCheck'
+        },
+        {
+          id: 'cloud',
+          title: 'Cloud & Edge CDN',
+          benefit: '99.99% Uptime global',
+          description: 'Distribuição em nós globais de borda para entrega instantânea em qualquer continente.',
+          badge: 'Global Edge',
+          icon: 'Cloud'
+        }
+      ]
+    },
+    finalCta: {
+      headline: 'Vamos construir algo extraordinário?',
+      subheadline: 'A sua próxima grande presença digital começa com uma ideia. Nós transformamos essa ideia em experiência.',
+      primaryButton: 'Começar um projeto',
+      secondaryButton: 'Falar com a Axé IA',
+      regionBadge: 'Brasil · Portugal · Europa · América Latina · Worldwide'
+    },
+    footer: {
+      tagline: 'Digital experiences engineered for the world.',
+      companyLinks: 'Empresa',
+      servicesLinks: 'Serviços',
+      legalLinks: 'Legal',
+      languagesTitle: 'Idiomas',
+      rights: 'Todos os direitos reservados. Axé IA Studio.',
+      privacy: 'Política de Privacidade',
+      terms: 'Termos de Serviço'
+    },
+    modal: {
+      title: 'Iniciar Novo Projeto com a Axé IA',
+      subtitle: 'Compartilhe a sua visão e receba uma proposta técnica e comercial sob medida em 24 horas úteis.',
+      step1Title: 'Tipo de Projeto',
+      step2Title: 'Escala & Prazo',
+      step3Title: 'Contato & Detalhes',
+      projectTypeLabel: 'Qual a solução ideal para o seu momento?',
+      types: [
+        { id: 'website', label: 'Website Premium', desc: 'Website institucional moderno, rápido e estratégico' },
+        { id: 'landing', label: 'Landing Page', desc: 'Página de altíssima conversão para vendas e contatos' },
+        { id: 'ecommerce', label: 'E-commerce de Luxo', desc: 'Loja virtual com experiência de compra refinada' },
+        { id: 'ia', label: 'Experiência com IA', desc: 'Automação inteligente e agentes sob medida' },
+        { id: 'global', label: 'Presença Internacional', desc: 'Multi-idioma e escala transfronteiriça' },
+        { id: 'custom', label: 'Solução Sob Medida', desc: 'Projeto complexo ou ecossistema exclusivo' }
+      ],
+      budgetLabel: 'Investimento previsto para o projeto',
+      budgets: ['Sob Consulta', 'R$ 7.500 — R$ 15.000', 'R$ 15.000 — R$ 35.000', 'R$ 35.000+ / Internacional'],
+      timelineLabel: 'Expectativa de lançamento',
+      timelines: ['Imediato (até 3 semanas)', '1 a 2 meses', 'Planejamento estratégico (3+ meses)'],
+      nameLabel: 'Nome Completo',
+      emailLabel: 'E-mail Profissional',
+      phoneLabel: 'WhatsApp / Telefone com DDD',
+      messageLabel: 'Descreva resumidamente a sua visão ou objetivo',
+      messagePlaceholder: 'Compartilhe detalhes sobre a sua empresa e o que espera da sua nova presença digital...',
+      submitButton: 'Enviar Briefing do Projeto',
+      whatsappButton: 'Falar Diretamente no WhatsApp',
+      submitting: 'Enviando dados...',
+      successTitle: 'Solicitação Enviada com Sucesso',
+      successMessage: 'Recebemos os detalhes do seu projeto. Entraremos em contato em breve.',
+      closeButton: 'Fechar'
+    }
+  },
+
   'pt-pt': {
     nav: {
       services: 'O Que Fazemos',
