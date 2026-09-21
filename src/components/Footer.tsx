@@ -143,35 +143,6 @@ export const Footer: React.FC<FooterProps> = ({
                   <ArrowUpRight className="w-3.5 h-3.5 text-[#d4af37]" />
                 </button>
               </li>
-              <li>
-                <a
-                  href="/axe-ia.html"
-                  download="index.html"
-                  className="text-[#d4af37] hover:underline flex items-center gap-1 font-mono text-[11px]"
-                >
-                  <span>↓ Baixar em HTML (index.html)</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/axe-ia-dist.zip"
-                  download="axe-ia-dist.zip"
-                  className="text-slate-400 hover:text-[#d4af37] hover:underline flex items-center gap-1 font-mono text-[11px]"
-                >
-                  <span>↓ Baixar Pacote (.ZIP)</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/axe-ia-logo.svg"
-                  download="axe-ia-logo.svg"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-slate-400 hover:text-[#d4af37] hover:underline flex items-center gap-1 font-mono text-[11px]"
-                >
-                  <span>↓ Baixar Logotipo Oficial (.SVG)</span>
-                </a>
-              </li>
               <li className="pt-2">
                 <a
                   href="mailto:axxeiacompany@gmail.com"

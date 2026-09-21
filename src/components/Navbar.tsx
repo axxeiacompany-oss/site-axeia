@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Globe, Menu, X, ChevronDown, ArrowUpRight, Sparkles, Download, FileCode } from 'lucide-react';
+import { Globe, Menu, X, ChevronDown, ArrowUpRight, Sparkles } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { languageOptions, translations } from '../data/translations';
 
@@ -189,18 +189,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
             )}
           </div>
-
-          {/* Direct Download HTML Button */}
-          <a
-            href="/axe-ia.html"
-            download="index.html"
-            id="nav-download-html-btn"
-            className="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-200 bg-white/[0.05] hover:bg-white/[0.1] border border-white/[0.12] hover:border-[#d4af37]/50 transition-all cursor-pointer"
-            title="Baixar diretamente em arquivo único HTML (index.html)"
-          >
-            <FileCode className="w-3.5 h-3.5 text-[#d4af37]" />
-            <span>Baixar HTML</span>
-          </a>
 
           {/* Primary CTA Button */}
           <button

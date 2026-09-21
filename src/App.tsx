@@ -14,7 +14,6 @@ import { FinalCTA } from './components/FinalCTA';
 import { Footer } from './components/Footer';
 import { ProjectModal } from './components/ProjectModal';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
-import { DownloadModal } from './components/DownloadModal';
 
 export default function App() {
   // Initialize language from path (e.g., /en, /es, /fr, /pt-pt) or fallback to 'pt-pt'
@@ -143,9 +142,6 @@ export default function App() {
         onSelectForProposal={(projectName) => handleOpenProjectModal(projectName)}
         currentLang={currentLang}
       />
-
-      {/* Floating Download Site Action & Modal */}
-      <DownloadModal />
     </div>
   );
 }
